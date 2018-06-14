@@ -14,8 +14,12 @@ client.on('message', message => {
 client.on('message', message => {
     if (message.content === 'bing') {
     	message.reply('BONG!');
-  	}
+    }
 });
 
+client.on('message', message => {
+    if (message.content === 'Sieze') {
+    	message.reply('The Savage');
+  	}
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
